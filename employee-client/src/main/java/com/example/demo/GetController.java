@@ -14,4 +14,13 @@ public class GetController {
 		System.err.println(dto);
 		return dto;
 	}
+	
+	@GetMapping("/get")
+	public EmployeeDTO get() {
+		EmployeeDTO dto=new EmployeeDTO();
+		dto.setEmpID("1111");
+		dto.setName("1111");
+		System.err.println(dto);
+		return dto;
+	}
 }
